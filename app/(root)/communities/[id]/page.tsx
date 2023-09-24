@@ -21,7 +21,7 @@ async function Page({ params }: { params: { id: string } }) {
         name={communityDetails.name}
         username={communityDetails.username}
         imgUrl={communityDetails.image}
-        bio={communityDetails.bio}
+        bio=""
         type="Community"
       />
 

@@ -70,14 +70,21 @@ function PostThread({ userId }: { userId: string }) {
                   Content
                 </FormLabel>
                 <FormControl className="no-focus border border-dark-4 bg-dark-3 text-light-1">
-                  <Textarea rows={15} {...field} />
+                  <Textarea
+                    rows={15}
+                    {...field}
+                    placeholder="What's going on today?"
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
             )}
           />
 
-          <Button type="submit" className="bg-primary-500">
+          <Button
+            type="submit"
+            className="bg-gradient-to-tr from-indigo-700 to-pink-900 max-w-xs"
+          >
             Post Thread
           </Button>
         </form>

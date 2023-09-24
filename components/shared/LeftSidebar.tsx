@@ -25,7 +25,9 @@ function LeftSidebar() {
             <Link
               href={link.route}
               key={link.label}
-              className={`leftsidebar_link ${isActive && "bg-primary-500"}`}
+              className={`leftsidebar_link ${
+                isActive && "bg-gradient-to-tr from-indigo-700 to-pink-900"
+              }`}
             >
               <Image
                 src={link.imgURL}
